@@ -1,11 +1,29 @@
 class AbstractBeverage:
-	pass
+	def __init__(self):
+		self.price = 0
+		self.title = None
+
+	def __str__(self):
+
+		return self.title
+
 
 class Cola(AbstractBeverage):
-	pass
+	def __init__(self):
+		super().__init__()
+		self.price = 50
+		self.title = "Cola"
+
 
 class Sprite(AbstractBeverage):
-	pass
+	def __init__(self):
+		super().__init__()
+		self.price = 60
+		self.title = "Sprite"
+
 
 class Fanta(AbstractBeverage):
-	pass
+	def __init__(self):
+		super().__init__()
+		self.price = 80
+		self.title = "Fanta"
